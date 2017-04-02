@@ -77,3 +77,26 @@ body
                 &.right
                     background-color: black
                     color: white
+
+
+$desktop-min-width: 992px
+@media screen and (max-width: $desktop-min-width)
+    html
+        font-size: 30px
+
+        body
+            .content--wrapper
+                justify-content: center
+
+                h1
+                    margin-top: 0
+
+                .p--wrapper
+                    height: 8.5rem
+
+                .button--container
+                    flex-direction: column
+
+                    .button
+                        &.left
+                            margin-bottom: 1rem
