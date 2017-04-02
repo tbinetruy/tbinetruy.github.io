@@ -1,8 +1,25 @@
+@font-face
+    font-family: Lato-Regular
+    font-style: 500
+    font-weight: normal
+    src: url(./fonts/Lato-Regular.ttf)
+
+@font-face
+    font-family: Lato-Semibold
+    font-style: 500
+    font-weight: normal
+    src: url(./fonts/Lato-Semibold.woff) format("woff")
+
+a
+    color: black
+    text-decoration: none
+
 body
     height: 100vh
     margin: 0
     display: flex
     flex-direction: column
+    font-family: Lato-Regular
 
     .image--wrapper
         background-image: url(https://images.unsplash.com/photo-1443397646383-16272048780e?ixlib=rb-0.3.5…crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d5d18719163cd91c57e0685fbd2d1bec)
@@ -17,8 +34,46 @@ body
         justify-content: center
 
         .logo
-            height: 200px
+            height: 83%
     
     .content--wrapper
         display: flex
         flex: 0.5
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+
+        h1
+            margin-bottom: 0
+
+        .p--wrapper
+            display: flex
+            flex-direction: column
+            height: 5rem
+            justify-content: space-between
+            margin: 1.5rem 0
+            margin-top: 1.5rem
+            margin-bottom: 1.7rem
+
+            p
+                text-align: center
+                margin: 0
+
+        .button--container
+            display: flex
+            
+            .button
+                text-align: center
+                border: 2px solid black
+                border-radius: 5px
+                margin: 0 1.5rem
+                padding: 0.7rem 1.5rem
+                min-width: 8rem
+                font-family: Lato-Semibold
+
+                &.left
+
+                &.right
+                    background-color: black
+                    color: white
