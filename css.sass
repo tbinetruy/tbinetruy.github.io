@@ -22,20 +22,19 @@ body
     font-family: Lato-Regular
 
     .image--wrapper
-        background-image: url(https://images.unsplash.com/photo-1443397646383-16272048780e?ixlib=rb-0.3.5…crop=entropy&cs=tinysrgb&w=1080&fit=max&s=d5d18719163cd91c57e0685fbd2d1bec)
+        background-image: url(https://images.unsplash.com/photo-1470470558828-e00ad9dbbc13?dpr=2&auto=format&fit=crop&w=1080&h=NaN&q=80&cs=tinysrgb&crop=&bg=)
         background-size: cover
-        background-position: center
+        background-position: 0px -25rem
         content: ""
         display: flex
         flex: 0.5
-        background-position-y: 100%
         background-repeat: no-repeat
         align-items: center
         justify-content: center
 
         .logo
             height: 83%
-    
+
     .content--wrapper
         display: flex
         flex: 0.5
@@ -62,7 +61,7 @@ body
 
         .button--container
             display: flex
-            
+
             .button
                 text-align: center
                 border: 2px solid black
@@ -85,6 +84,9 @@ $desktop-min-width: 992px
         font-size: 30px
 
         body
+            .image--wrapper
+                background-position: center
+
             .content--wrapper
                 justify-content: center
 
